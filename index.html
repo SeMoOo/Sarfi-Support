@@ -97,7 +97,10 @@
       <p>Open <strong>Settings → Automatic Capture → Test Your Bank Message</strong>. Use a redacted example. The test uses an isolated in-memory store and does not add a transaction to your records. You can also run the built-in sample test.</p>
 
       <h3>Can I scan a receipt?</h3>
-      <p>Yes. Open Transactions or Home, choose <strong>Scan a Receipt</strong>, then take a photo or choose one from your library. Sarfi reads the merchant, total and date on this iPhone using Apple’s Vision framework. The image is not uploaded or saved. Review and edit every field before saving.</p>
+      <p>Yes. Open <strong>Add Transaction</strong> from Home or Transactions, then choose <strong>Scan a Receipt</strong>. Take a photo or choose one from your library. Sarfi reads the merchant, total and date on this iPhone using Apple’s Vision framework. The image is not uploaded or saved. Review and edit every field before saving.</p>
+
+      <h3>Can I import a screenshot of my bank transactions?</h3>
+      <p>Yes. Open <strong>Transactions</strong> and choose the import button, or use <strong>Import Screenshot</strong> in the empty state. Select a clear screenshot of your transaction list. Sarfi reads it on-device, proposes rows, and lets you edit, deselect and import only what you choose. Balances, limits and account numbers are ignored, and possible duplicates start unselected.</p>
 
       <h3>Does Sarfi identify transaction currencies?</h3>
       <p>Yes. Sarfi uses a currency code or symbol found in a supplied bank message, or the currency passed to it by an Apple Pay Shortcut. If no currency is supplied or recognized, the capture defaults to SAR and may need review. Sarfi preserves original currencies and does not convert or combine different currencies in totals.</p>
@@ -133,6 +136,9 @@
 
       <h3>Receipt scanning</h3>
       <p>Receipt scanning is optional. When you choose a camera scan or a photo, the image is processed on this iPhone with Apple’s Vision framework. Sarfi extracts candidate text and derives a merchant, total, date and currency; the image and recognized text are held in memory only for the active scan. Sarfi does not upload the image, save it as a file, attach it to the transaction, or share the image or recognized text. You review and can edit every field before saving. OCR may be inaccurate; manual entry remains available.</p>
+
+      <h3>Bank transaction screenshots</h3>
+      <p>Importing a bank transaction list is optional. When you choose a screenshot, it is processed on this iPhone with Apple’s Vision framework. Sarfi proposes merchant, amount, currency, date and type rows in memory; you can edit, deselect or remove them before importing. The screenshot and recognized rows are not uploaded, saved as an image, attached to a record or shared. Balance and summary lines are skipped, possible duplicates are flagged, and re-importing the same screenshot is idempotent. OCR may be inaccurate; manual entry remains available.</p>
 
       <h3>On-device processing and learning</h3>
       <p>Optional bank-message classification may use Apple's on-device <strong>SystemLanguageModel</strong> for text you explicitly supply through Shortcuts. The deterministic local parser remains the fallback and cannot be overridden by a model refusal. Text is processed locally and the original message body is not persisted after parsing. This feature does not grant access to your inbox or bank accounts.</p>
@@ -175,7 +181,10 @@
       <p>افتح <strong>الإعدادات ← التسجيل التلقائي ← اختبار رسالتك البنكية</strong>، واستخدم مثالاً منقحاً. يستخدم الاختبار مخزناً مؤقتاً ومعزولاً ولا يضيف عملية إلى سجلاتك. يمكنك أيضاً تشغيل الاختبار التجريبي المضمن.</p>
 
       <h3>هل يمكنني مسح إيصال؟</h3>
-      <p>نعم. افتح «العمليات» أو «الرئيسية» واختر <strong>مسح إيصال</strong>، ثم التقط صورة أو اختر صورة من مكتبتك. يقرأ صرفي المتجر والإجمالي والتاريخ على هذا iPhone باستخدام إطار Vision من Apple. لا تُرفع الصورة أو تُحفظ. راجع كل حقل وعدّله قبل الحفظ.</p>
+      <p>نعم. افتح <strong>إضافة عملية</strong> من «الرئيسية» أو «العمليات»، ثم اختر <strong>مسح إيصال</strong>. التقط صورة أو اختر صورة من مكتبتك. يقرأ صرفي المتجر والإجمالي والتاريخ على هذا iPhone باستخدام إطار Vision من Apple. لا تُرفع الصورة أو تُحفظ. راجع كل حقل وعدّله قبل الحفظ.</p>
+
+      <h3>هل يمكنني استيراد لقطة شاشة لعملياتي البنكية؟</h3>
+      <p>نعم. افتح <strong>العمليات</strong> واختر زر الاستيراد، أو استخدم <strong>استيراد لقطة شاشة</strong> في الحالة الفارغة. اختر لقطة واضحة لقائمة العمليات. يقرأها صرفي على الجهاز، ويقترح صفوفاً، ويتيح لك تعديلها أو إلغاء تحديدها واستيراد ما تختاره فقط. تُتجاهل الأرصدة والحدود وأرقام الحسابات، وتبدأ العمليات المحتمل تكرارها غير محددة.</p>
 
       <h3>هل يتعرّف صرفي على عملة العملية؟</h3>
       <p>نعم. يستخدم صرفي رمز العملة أو علامتها إذا ظهرت في الرسالة البنكية المرسلة، أو العملة التي يمررها اختصار Apple Pay. إذا لم تُرسل العملة أو لم يتعرف عليها، يستخدم صرفي الريال السعودي افتراضياً وقد تحتاج العملية إلى مراجعة. يحتفظ صرفي بالعملات الأصلية ولا يحوّل العملات المختلفة أو يجمعها في الإجماليات.</p>
@@ -209,6 +218,9 @@
 
       <h3>مسح الإيصالات</h3>
       <p>مسح الإيصالات اختياري. عند اختيار مسح بالكاميرا أو صورة، تُعالَج الصورة على هذا iPhone باستخدام إطار Vision من Apple. يستخرج صرفي نصاً مرشحاً ويستنتج المتجر والإجمالي والتاريخ والعملة؛ تبقى الصورة والنص في الذاكرة فقط للمسح النشط. لا يرفع صرفي الصورة أو يحفظها كملف أو يرفقها بالعملية أو يشاركها أو يشارك النص المستخرج. تراجع كل حقل ويمكنك تعديله قبل الحفظ. قد تكون القراءة غير دقيقة، ويبقى الإدخال اليدوي متاحاً.</p>
+
+      <h3>لقطات شاشة العمليات البنكية</h3>
+      <p>استيراد قائمة العمليات البنكية اختياري. عند اختيار لقطة شاشة، تُعالَج على هذا iPhone باستخدام إطار Vision من Apple. يقترح صرفي صفوفاً للمتجر والمبلغ والعملة والتاريخ والنوع في الذاكرة؛ يمكنك تعديلها أو إلغاء تحديدها أو إزالتها قبل الاستيراد. لا تُرفع لقطة الشاشة أو الصفوف المستخرجة أو تُحفظ كصورة أو تُرفق بعملية أو تُشارك. تُتجاهل أسطر الرصيد والملخص، وتُعلَّم العمليات المحتمل تكرارها، وإعادة استيراد اللقطة نفسها لا تكرر العمليات. قد تكون القراءة غير دقيقة، ويبقى الإدخال اليدوي متاحاً.</p>
 
       <h3>المعالجة والتعلّم على الجهاز</h3>
       <p>قد يستخدم التصنيف الاختياري للرسائل البنكية نموذج <strong>SystemLanguageModel</strong> المحلي من Apple للنصوص التي تمرّرها صراحةً عبر «الاختصارات». يبقى المحلّل المحلي هو البديل، ولا يمكن لنموذج أن يلغي نتيجة استخراج مؤكّدة. تُعالَج النصوص محلياً، ولا يحتفظ صرفي بنص الرسالة الأصلي بعد التحليل. لا تمنح هذه الميزة وصولاً إلى صندوق الرسائل أو الحسابات البنكية.</p>
