@@ -96,6 +96,9 @@
       <h3>How do I test a bank-message format safely?</h3>
       <p>Open <strong>Settings → Automatic Capture → Test Your Bank Message</strong>. Use a redacted example. The test uses an isolated in-memory store and does not add a transaction to your records. You can also run the built-in sample test.</p>
 
+      <h3>Can I scan a receipt?</h3>
+      <p>Yes. Open Transactions or Home, choose <strong>Scan a Receipt</strong>, then take a photo or choose one from your library. Sarfi reads the merchant, total and date on this iPhone using Apple’s Vision framework. The image is not uploaded or saved. Review and edit every field before saving.</p>
+
       <h3>Does Sarfi identify transaction currencies?</h3>
       <p>Yes. Sarfi uses a currency code or symbol found in a supplied bank message, or the currency passed to it by an Apple Pay Shortcut. If no currency is supplied or recognized, the capture defaults to SAR and may need review. Sarfi preserves original currencies and does not convert or combine different currencies in totals.</p>
 
@@ -119,7 +122,7 @@
 
     <section id="privacy" aria-labelledby="privacy-title">
       <h2 id="privacy-title">Privacy policy</h2>
-      <p><strong>Effective date: November 7, 2026.</strong></p>
+      <p><strong>Effective date: November 8, 2026.</strong></p>
       <p>Sarfi is designed to help you understand personal spending while keeping financial information under your control. This policy covers the iPhone app, widgets and Apple Watch companion.</p>
 
       <h3>Information handled by Sarfi</h3>
@@ -127,6 +130,9 @@
 
       <h3>Automatic capture</h3>
       <p>Sarfi does not access Apple Wallet history, the Messages database or notifications from other apps. Automatic capture works only through a compatible personal automation that you create and approve in Apple Shortcuts. Bank-message text supplied by a shortcut is processed on-device in memory; Sarfi discards the original message after parsing.</p>
+
+      <h3>Receipt scanning</h3>
+      <p>Receipt scanning is optional. When you choose a camera scan or a photo, the image is processed on this iPhone with Apple’s Vision framework. Sarfi extracts candidate text and derives a merchant, total, date and currency; the image and recognized text are held in memory only for the active scan. Sarfi does not upload the image, save it as a file, attach it to the transaction, or share the image or recognized text. You review and can edit every field before saving. OCR may be inaccurate; manual entry remains available.</p>
 
       <h3>On-device processing and learning</h3>
       <p>Optional bank-message classification may use Apple's on-device <strong>SystemLanguageModel</strong> for text you explicitly supply through Shortcuts. The deterministic local parser remains the fallback and cannot be overridden by a model refusal. Text is processed locally and the original message body is not persisted after parsing. This feature does not grant access to your inbox or bank accounts.</p>
@@ -168,6 +174,9 @@
       <h3>كيف أختبر صيغة رسالة بنكية بأمان؟</h3>
       <p>افتح <strong>الإعدادات ← التسجيل التلقائي ← اختبار رسالتك البنكية</strong>، واستخدم مثالاً منقحاً. يستخدم الاختبار مخزناً مؤقتاً ومعزولاً ولا يضيف عملية إلى سجلاتك. يمكنك أيضاً تشغيل الاختبار التجريبي المضمن.</p>
 
+      <h3>هل يمكنني مسح إيصال؟</h3>
+      <p>نعم. افتح «العمليات» أو «الرئيسية» واختر <strong>مسح إيصال</strong>، ثم التقط صورة أو اختر صورة من مكتبتك. يقرأ صرفي المتجر والإجمالي والتاريخ على هذا iPhone باستخدام إطار Vision من Apple. لا تُرفع الصورة أو تُحفظ. راجع كل حقل وعدّله قبل الحفظ.</p>
+
       <h3>هل يتعرّف صرفي على عملة العملية؟</h3>
       <p>نعم. يستخدم صرفي رمز العملة أو علامتها إذا ظهرت في الرسالة البنكية المرسلة، أو العملة التي يمررها اختصار Apple Pay. إذا لم تُرسل العملة أو لم يتعرف عليها، يستخدم صرفي الريال السعودي افتراضياً وقد تحتاج العملية إلى مراجعة. يحتفظ صرفي بالعملات الأصلية ولا يحوّل العملات المختلفة أو يجمعها في الإجماليات.</p>
 
@@ -189,7 +198,7 @@
       </ul>
 
       <h2 id="privacy-ar-title">سياسة الخصوصية</h2>
-      <p><strong>تاريخ السريان: ٧ نوفمبر ٢٠٢٦.</strong></p>
+      <p><strong>تاريخ السريان: ٨ نوفمبر ٢٠٢٦.</strong></p>
       <p>صُمّم صرفي لمساعدتك على فهم مصروفاتك مع إبقاء بياناتك المالية تحت سيطرتك. تشمل هذه السياسة تطبيق iPhone وأدوات الشاشة وتطبيق Apple Watch.</p>
 
       <h3>المعلومات التي يعالجها صرفي</h3>
@@ -197,6 +206,9 @@
 
       <h3>التسجيل التلقائي</h3>
       <p>لا يصل صرفي إلى سجل Apple Wallet أو قاعدة بيانات الرسائل أو إشعارات التطبيقات الأخرى. يعمل التسجيل التلقائي فقط عبر أتمتة شخصية متوافقة تنشئها وتوافق عليها في تطبيق اختصارات Apple. يعالج صرفي نص الرسالة البنكية الذي يمرره الاختصار محلياً في الذاكرة، ويتخلص من الرسالة الأصلية بعد التحليل.</p>
+
+      <h3>مسح الإيصالات</h3>
+      <p>مسح الإيصالات اختياري. عند اختيار مسح بالكاميرا أو صورة، تُعالَج الصورة على هذا iPhone باستخدام إطار Vision من Apple. يستخرج صرفي نصاً مرشحاً ويستنتج المتجر والإجمالي والتاريخ والعملة؛ تبقى الصورة والنص في الذاكرة فقط للمسح النشط. لا يرفع صرفي الصورة أو يحفظها كملف أو يرفقها بالعملية أو يشاركها أو يشارك النص المستخرج. تراجع كل حقل ويمكنك تعديله قبل الحفظ. قد تكون القراءة غير دقيقة، ويبقى الإدخال اليدوي متاحاً.</p>
 
       <h3>المعالجة والتعلّم على الجهاز</h3>
       <p>قد يستخدم التصنيف الاختياري للرسائل البنكية نموذج <strong>SystemLanguageModel</strong> المحلي من Apple للنصوص التي تمرّرها صراحةً عبر «الاختصارات». يبقى المحلّل المحلي هو البديل، ولا يمكن لنموذج أن يلغي نتيجة استخراج مؤكّدة. تُعالَج النصوص محلياً، ولا يحتفظ صرفي بنص الرسالة الأصلي بعد التحليل. لا تمنح هذه الميزة وصولاً إلى صندوق الرسائل أو الحسابات البنكية.</p>
